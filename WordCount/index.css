@@ -55,6 +55,9 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     color: #064a5a;
   }
   
+.light-mode-text {
+  color: #f8b591;
+}
   
   
   /* Style the check text button */
