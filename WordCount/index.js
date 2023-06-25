@@ -2,6 +2,8 @@
 const mainDiv = document.querySelector(".main-div");
 const checkTextBtn = document.querySelector("#check-text-btn");
 const textInput = document.querySelector("#text-input");
+const logo = document.querySelector("#logo");
+const body = document.body;
 
 // Add a click event listener to the Check Text button
 checkTextBtn.addEventListener("click", () => {
@@ -47,4 +49,8 @@ checkTextBtn.addEventListener("click", () => {
       location.reload();
     });
   }, 2000);
+});
+
+logo.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
 });
