@@ -6,7 +6,12 @@ const textInput = document.querySelector("#text-input");
 // Add a click event listener to the Check Text button
 checkTextBtn.addEventListener("click", () => {
   // Show the loading animation
-  mainDiv.innerHTML = '<div class="loading-animation"></div>';
+  mainDiv.innerHTML = `
+    <div class="loading-animation">
+      <div class="spinner"></div>
+      <div>Loading...</div>
+    </div>
+  `;
 
   // Delay the execution of the word count function by 2 seconds to simulate a slow operation
   setTimeout(() => {
