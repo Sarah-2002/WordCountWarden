@@ -1,16 +1,12 @@
 // Select the elements that we need
-const mainDiv = document.querySelector('.main-div');
-const checkTextBtn = document.querySelector('#check-text-btn');
-const textInput = document.querySelector('#text-input');
-
+const mainDiv = document.querySelector(".main-div");
+const checkTextBtn = document.querySelector("#check-text-btn");
+const textInput = document.querySelector("#text-input");
 
 // Add a click event listener to the Check Text button
-checkTextBtn.addEventListener('click', () => {
+checkTextBtn.addEventListener("click", () => {
   // Show the loading animation
   mainDiv.innerHTML = '<div class="loading-animation"></div>';
-});
-
-
 
   // Delay the execution of the word count function by 2 seconds to simulate a slow operation
   setTimeout(() => {
@@ -41,9 +37,9 @@ checkTextBtn.addEventListener('click', () => {
     `;
 
     // Select the reset button and add a click event listener to reload the page
-    const resetBtn = document.querySelector('#reset-btn');
-    resetBtn.addEventListener('click', () => {
+    const resetBtn = document.querySelector("#reset-btn");
+    resetBtn.addEventListener("click", () => {
       location.reload();
     });
   }, 2000);
-
+});
