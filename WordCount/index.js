@@ -13,7 +13,7 @@ checkTextBtn.addEventListener("click", () => {
   mainDiv.innerHTML = `
     <div class="loading-animation">
       <div class="spinner"></div>
-      <div>Loading...</div>
+      <div></div>
     </div>
   `;
 
